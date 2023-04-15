@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "519868900076",
+    "project_id": "lableiz-da897",
+    "storage_bucket": "lableiz-da897.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519868900076:android:3fee6983c085817a363bc9",
+        "android_client_info": {
+          "package_name": "com.labelize.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519868900076-rlocpgm13ggg2t2s2kh3hsugti3l96te.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.labelize.app",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "519868900076-e8rlq5eouehuqme42h3gamt0eupekpr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5m5K-j9_5kMGfel3m-LQWIBTczaeiOGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519868900076-e8rlq5eouehuqme42h3gamt0eupekpr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
