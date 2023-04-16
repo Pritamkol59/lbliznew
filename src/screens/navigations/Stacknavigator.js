@@ -7,6 +7,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import FullScreenChz from 'react-native-fullscreen-chz';
 import Login from '../Login';
+import Otp from '../Otp';
 
 const Stacknavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -29,6 +30,7 @@ const Stacknavigator = () => {
         screenOptions={{headerShown: false}}>
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Otp" component={Otp} />
       </Stack.Navigator>
     </NavigationContainer>
   );

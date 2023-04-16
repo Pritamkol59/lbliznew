@@ -5961,6 +5961,11 @@ react-native-gradle-plugin@^0.71.17:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz"
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
+react-native-keyboard-spacer@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/react-native-keyboard-spacer/-/react-native-keyboard-spacer-0.4.1.tgz"
+  integrity sha512-QPX2El4U2VfhRQm1YOTrTsOJIDjJBydpdz87jmiFOxBmKJfVn7CwiTzzipKTiLwfAFoUYQ+sB/xcnIhRZPF+SQ==
+
 react-native-normalize@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/react-native-normalize/-/react-native-normalize-1.0.1.tgz"
