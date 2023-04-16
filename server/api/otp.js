@@ -28,6 +28,8 @@ router.post('/', async (req, res) => {
 
       const reg = await create('users', bal);
 
+      await sendOTP(phn, otp);
+
       res.status(201).json({otp});
     } else {
       const chack1 = await singlematchfind('users', 'phn', phn);
@@ -40,7 +42,7 @@ router.post('/', async (req, res) => {
         otp,
       };
       const otpupdata = await updatex('users', ids, bal);
-
+      await sendOTP(phn, otp);
       res.status(201).json({otp1: otp});
     }
   } catch (error) {
