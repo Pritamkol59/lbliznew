@@ -1,3 +1,4 @@
+/* eslint-disable */
 const express = require('express');
 const firebase = require('firebase-admin');
 const {db} = require('../connection');

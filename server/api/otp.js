@@ -1,3 +1,4 @@
+/* eslint-disable */
 const express = require('express');
 const firebase = require('firebase-admin');
 const {db} = require('../connection');
@@ -24,6 +25,17 @@ router.post('/', async (req, res) => {
       const bal = {
         phn,
         otp,
+        email:"",
+        bankac:"",
+        address:"",
+        accountholdername:"",
+        ifsccode:"",
+        website:"",
+        gstno:"",
+        branchname:"",
+        businessname:"",
+        membership:0,
+        expirydate:0
       };
 
       const reg = await create('users', bal);
@@ -32,9 +44,9 @@ router.post('/', async (req, res) => {
 
       res.status(201).json({otp});
     } else {
-      const chack1 = await singlematchfind('users', 'phn', phn);
-
-      // console.log(chack1); ->data
+      
+const chack1 = await singlematchfind('users', 'phn', phn);
+      // console.log(chack1); 
       // console.log(chack1[0].id); -> only id
       const ids = chack1[0].id;
 

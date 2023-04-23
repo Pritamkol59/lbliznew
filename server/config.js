@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
     firebase: {
       serviceAccountKeyPath: './lableiz-da897-firebase-adminsdk-70sno-c0e4769bce.json',

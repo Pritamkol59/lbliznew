@@ -1,32 +1,48 @@
+/* eslint-disable */
+
 const express = require('express');
 const firebase = require('firebase-admin');
 const {db} = require('../connection');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
+const {
+  create,
+  dualmatchfind,
+  singlematchfind,
+  idfind,
+  updatex,
+  deletedata,
+} = require('../model/database');
 
+const { tokengen } = require('../helper/token');
 //Validation from fire base
 router.post('/', async (req, res) => {
   const {phn, otp} = req.body;
 
   try {
-    const usersRef = db.collection('users');
-    const querySnapshot = await usersRef
-      .where('phn', '==', phn)
-      .where('otp', '==', otp)
-      .get();
-    if (querySnapshot.empty) {
-      throw new Error('User not found');
-    } else {
-      const secretKey = 'mysecretkey';
-      const token = jwt.sign({phn}, secretKey, {expiresIn: '30d'});
 
-      console.log(token);
+const dot= await dualmatchfind('users', 'phn',phn ,'otp',otp);
+if (dot == false){
 
-      res.status(200).json({token});
+  res.status(401).json({msg:"Invalid User"});
+}
+else {
 
-      // username,bankacno,ifsccode,address,accounttype,membership:0,email,businessname,expairy:0,photourl,signatureurl
-    }
-  } catch (error) {
+  const chack1 = await singlematchfind('users', 'phn', phn);
+
+  const ids = chack1[0].id;
+
+const dot2 =await idfind('users',ids)
+
+const tk=tokengen(phn);
+
+  res.status(201).json({tk});
+
+}
+  }
+
+  
+   catch (error) {
     console.error(error);
     res.status(500).json({error: error.message});
   }

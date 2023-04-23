@@ -7,6 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
   TouchableWithoutFeedback,
+  KeyboardAvoidingView,
 } from 'react-native';
 import React, {useState, useRef} from 'react';
 import Colors from '../theams/Colors';
@@ -70,6 +71,7 @@ const Otp = () => {
     <View style={styles.contaner}>
       <ScrollView style={styles.panel} showsVerticalScrollIndicator={false}>
         <TouchableWithoutFeedback onPress={handleScreenTouch}>
+            <KeyboardAvoidingView behavior='position'> 
           <View>
             <Image
               source={Images.login}
@@ -251,8 +253,9 @@ const Otp = () => {
               <Text style={styles.buttonText}>Submit</Text>
             </TouchableOpacity>
 
-            <KeyboardSpacer topSpacing={0} />
+            
           </View>
+                </KeyboardAvoidingView>
         </TouchableWithoutFeedback>
       </ScrollView>
     </View>

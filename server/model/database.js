@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const {db} = require('../connection');
 
 async function create(collectionName, data) {

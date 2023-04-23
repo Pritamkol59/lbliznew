@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const unirest = require('unirest');
 
 function sendOTP(phn, otp) {

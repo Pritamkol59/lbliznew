@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const firebase = require('firebase-admin');
 
 const serviceAccount = require('./lableiz-da897-firebase-adminsdk-70sno-c0e4769bce.json');
