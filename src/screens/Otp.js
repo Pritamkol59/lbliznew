@@ -35,6 +35,7 @@ const Otp = () => {
   const bjp = () => {
     const Otp = `${pin1}${pin2}${pin3}${pin4}${pin5}${pin6}`;
     console.log(Otp);
+    navigation.replace('Home');
   };
 
   const inputRef1 = useRef(null);

@@ -8,6 +8,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import FullScreenChz from 'react-native-fullscreen-chz';
 import Login from '../Login';
 import Otp from '../Otp';
+import Home from '../Home';
+import Freecard from '../Freecard';
+import Premiumcaed from '../Premiumcaed';
+import Users from '../Users';
+
+
 
 const Stacknavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -31,6 +37,10 @@ const Stacknavigator = () => {
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Otp" component={Otp} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Freecard" component={Freecard} />
+        <Stack.Screen name="Premiumcaed" component={Premiumcaed} />
+        <Stack.Screen name="Users" component={Users} />
       </Stack.Navigator>
     </NavigationContainer>
   );
