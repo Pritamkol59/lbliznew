@@ -10,7 +10,7 @@ import Login from '../Login';
 import Otp from '../Otp';
 import Home from '../Home';
 import Freecard from '../Freecard';
-import Premiumcaed from '../Premiumcaed';
+import Premiumcard from '../Premiumcard';
 import Users from '../Users';
 
 
@@ -39,7 +39,7 @@ const Stacknavigator = () => {
         <Stack.Screen name="Otp" component={Otp} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Freecard" component={Freecard} />
-        <Stack.Screen name="Premiumcaed" component={Premiumcaed} />
+        <Stack.Screen name="Premiumcard" component={Premiumcard} />
         <Stack.Screen name="Users" component={Users} />
       </Stack.Navigator>
     </NavigationContainer>

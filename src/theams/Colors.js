@@ -4,5 +4,6 @@ const Colors = {
   white: '#ffffffff',
   texinputclr: '#14224A',
   black: '#000',
+  red:'red',
 };
 export default Colors;

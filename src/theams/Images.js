@@ -14,5 +14,11 @@ const Images = {
   fc:require('../assets/image/fc.png'),
   pc:require('../assets/image/pc.png'),
 
+  freecardtemplate1:require('../assets/image/temp1.png'),
+  freecardtemplate2:require('../assets/image/temp2.png'),
+  freecardtemplate3:require('../assets/image/temp3.png'),
+  freecardtemplate4:require('../assets/image/temp4.png'),
+  freecardtemplate5:require('../assets/image/temp5.png'),
+
 };
 export default Images;

@@ -7,7 +7,7 @@ import FullScreenChz from 'react-native-fullscreen-chz';
 import Imageslider from '../components/Imageslider'
 import VideoPlayer from '../components/VideoPlayer'
 import ButtonTab from '../components/ButtonTab'
-
+import {useNavigation} from '@react-navigation/native';
 const windowWidth = Dimensions.get('window').width;
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
           FullScreenChz.enable();
         }
       }
+      const navigation = useNavigation();
   return (
     <View style={styles.container}>
         <ScrollView  showsVerticalScrollIndicator={false}>
@@ -49,10 +50,10 @@ const Home = () => {
 
                
             <View style={styles.buttonwrapper}>
-                <TouchableOpacity >
+                <TouchableOpacity  onPress={() => navigation.replace('Freecard')} >
                    <Image source={Images.fc} resizeMode='stretch' style={styles.button}/>
                 </TouchableOpacity>
-                <TouchableOpacity >
+                <TouchableOpacity   onPress={() => navigation.replace('Premiumcard')}>
                    <Image source={Images.pc} resizeMode='stretch' style={styles.button}/>
                 </TouchableOpacity>
                 </View>    
