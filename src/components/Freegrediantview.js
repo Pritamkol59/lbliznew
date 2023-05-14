@@ -6,55 +6,16 @@ import Images from '../theams/Images';
 import Colors from '../theams/Colors';
 import Icons from '../theams/Icon';
 
-
-// const Freegrediantview = () => {
-//   const refId = 'ydhgdfhgdgdgdgseygtxsdegsedtsedt';
-//   const truncatedRefId = refId.substring(0, 14) + '...';
-//   return (
-//      <View style={styles.container}>
-//       <LinearGradient
-//         colors={['#fbd309', '#f5f175']}
-//         style={styles.background}
-//         start={{x: 0, y: 0}}
-//         end={{x: 1, y: 1}}
-//       >
-//         <View style={styles.row}>
-
-//         <Image source={Images.freecardtemplate1} resizeMode='stretch' style={styles.img}/>
-
-//         <View style={{ flexDirection:'column',marginLeft:normalize(15), }}>
-
-//           <Text style={styles.txt}>Name:- Chandan Roy </Text>
-//           <Text style={styles.txt}>Mobile No:-9876543210 </Text>
-//             <Text style={styles.txt}>
-//       Refid:-{truncatedRefId}
-//     </Text>
-
-
-//         </View>
-
-//           </View>
-
-//           <View style={{ flexDirection:'column'}}>
-//             <TouchableOpacity>
-// <Image source={Icons.pencil} resizeMode='stretch' style={styles.icon}/>
-//       </TouchableOpacity>    
-//             <TouchableOpacity>
-// <Image source={Icons.printer} resizeMode='stretch' style={styles.icon}/>
-//       </TouchableOpacity>    
-//     </View>
-//       </LinearGradient>
-//     </View>
-//   )
-// }
-
-
 const Freegrediantview = ({ name, mobileNo, refId }) => {
   const truncatedRefId = refId.substring(0, 14) + '...';
+  const adactivity =()=>{
+
+    //Show ad Activity function
+  }
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={['#fbd309', '#f5f175']}
+        colors={['#fa7000', '#fff']}
         style={styles.background}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
@@ -71,7 +32,7 @@ const Freegrediantview = ({ name, mobileNo, refId }) => {
           <TouchableOpacity>
             <Image source={Icons.pencil} resizeMode='stretch' style={styles.icon} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={adactivity}>
             <Image source={Icons.printer} resizeMode='stretch' style={styles.icon} />
           </TouchableOpacity>
         </View>

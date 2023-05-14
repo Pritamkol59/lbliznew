@@ -12,6 +12,8 @@ import Home from '../Home';
 import Freecard from '../Freecard';
 import Premiumcard from '../Premiumcard';
 import Users from '../Users';
+import Freepluse from '../Freepluse';
+import Create_Free_Card from '../Create_Free_Card';
 
 
 
@@ -41,6 +43,8 @@ const Stacknavigator = () => {
         <Stack.Screen name="Freecard" component={Freecard} />
         <Stack.Screen name="Premiumcard" component={Premiumcard} />
         <Stack.Screen name="Users" component={Users} />
+        <Stack.Screen name="Freepluse" component={Freepluse} />
+        <Stack.Screen name="Create_Free_Card" component={Create_Free_Card} />
       </Stack.Navigator>
     </NavigationContainer>
   );

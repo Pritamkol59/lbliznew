@@ -25,7 +25,7 @@ icon:{
 },
 contaner:{
     position:'absolute',
-    bottom:normalize(150),
+    bottom:normalize(130),
     right:normalize(15),
 }
 

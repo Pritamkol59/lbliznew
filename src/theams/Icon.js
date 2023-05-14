@@ -9,5 +9,6 @@ const Icons = {
   plus: require('../assets/icon/plus.png'),
   pencil: require('../assets/icon/pencil.png'),
   printer: require('../assets/icon/printer.png'),
+  delete: require('../assets/icon/delete.png'),
 };
 export default Icons;

@@ -14,12 +14,12 @@ const Header_Top = (props) => {
       <Image source={Icons.back} resizeMode='stretch' style={styles.icon}/>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity  onPress={() => navigation.replace(props.name)}>
+      <TouchableOpacity  onPress={() => navigation.replace(props.name1)}>
       <View style={styles.contain}>
       <Text style={styles.txt}>{props.name1}</Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity  onPress={() => navigation.replace(props.name)}>
+      <TouchableOpacity  onPress={() => navigation.replace(props.name2)}>
       <View style={styles.contain1}>
       <Text style={styles.txt}>{props.name2}</Text>
       </View>

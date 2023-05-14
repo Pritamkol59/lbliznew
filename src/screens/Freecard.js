@@ -1,4 +1,4 @@
-import { View, Text,ScrollView,Alert,Dimensions,TouchableWithoutFeedback,StyleSheet,TouchableOpacity } from 'react-native'
+import { View, Text,ScrollView,Alert,Dimensions,TouchableWithoutFeedback,StyleSheet,TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react';
 import Header_Top from '../components/Header_Top'
 import FullScreenChz from 'react-native-fullscreen-chz';
@@ -9,6 +9,7 @@ import Freegrediantview from '../components/Freegrediantview';
 import Pluse from '../components/Pluse';
 import normalize from 'react-native-normalize'
 import { SwipeListView } from 'react-native-swipe-list-view';
+import Icons from '../theams/Icon';
 const windowWidth = Dimensions.get('window').width;
 const Freecard = () => {
    function handleScreenTouch() {
@@ -64,7 +65,7 @@ const Freecard = () => {
                   );
                 }}>
       <View style={styles.rowBack}>
-        <Text style={styles.deleteText}>Delete</Text>
+         <Image source={Icons.delete} resizeMode='stretch' style={styles.icon} />
       </View>
     </TouchableOpacity>
   )}
@@ -75,7 +76,7 @@ const Freecard = () => {
      </View>
      </TouchableWithoutFeedback>
      </ScrollView>
-     <Pluse name="freepluse"/>
+     <Pluse name="Freepluse"/>
      <ButtonTab/>
     </View>
   )
@@ -99,11 +100,19 @@ const styles = StyleSheet.create({
     
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    paddingLeft: normalize(15),
-    paddingRight: normalize(15),
+    paddingHorizontal:normalize(16),
+    height:normalize(125),
+    marginVertical:normalize(10),
+    borderRadius:15,
   },
   deleteText: {
     color: 'white',
   },
 
+  icon:{
+    height:normalize(28),
+    width:normalize(28),
+    tintColor:Colors.white,
+    // marginVertical:normalize(18)
+  }
 })
