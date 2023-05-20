@@ -102,6 +102,9 @@ android {
         versionName "1.0"
     }
 
+  
+
+
     splits {
         abi {
             reset()

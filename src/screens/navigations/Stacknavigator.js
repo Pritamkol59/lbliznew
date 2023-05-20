@@ -14,7 +14,7 @@ import Premiumcard from '../Premiumcard';
 import Users from '../Users';
 import Freepluse from '../Freepluse';
 import Create_Free_Card from '../Create_Free_Card';
-
+import Free_Card_Form from '../Free_Card_Form';
 
 
 const Stacknavigator = () => {
@@ -45,6 +45,7 @@ const Stacknavigator = () => {
         <Stack.Screen name="Users" component={Users} />
         <Stack.Screen name="Freepluse" component={Freepluse} />
         <Stack.Screen name="Create_Free_Card" component={Create_Free_Card} />
+        <Stack.Screen name="Free_Card_Form" component={Free_Card_Form} />
       </Stack.Navigator>
     </NavigationContainer>
   );

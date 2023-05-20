@@ -9,7 +9,7 @@ const VideoPlayer = ({ videoUri }) => {
   const [muted, setMuted] = useState(false);
 
   useEffect(() => {
-    setPaused(false); // Automatically start the video when the component mounts
+    setPaused(true); // Automatically start the video when the component mounts
   }, []);
 
   const handlePlayPause = () => {
